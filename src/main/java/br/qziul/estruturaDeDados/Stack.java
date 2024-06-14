@@ -19,8 +19,8 @@ public class Stack {
 
 //  Classe que representa um Nó na pilha.
     class Node {
-        private String data;
-        private Node next;
+        String data;
+        Node next;
 
         public Node(String data) {
             this.data = data;
@@ -32,6 +32,25 @@ public class Stack {
         Node newNode = new Node(data);
         this.top = newNode;
         this.height = 1;
+    }
+
+//  Remover item da pilha.
+    public String pop() {
+        if(this.height == 0) {
+            return null;
+        }
+
+        Node varTemp;
+        if(this.height == 1) {
+            varTemp = this.top;
+            this.top = null;
+        } else {
+            varTemp = this.top;
+            this.top = this.top.next;
+        }
+
+        this.height--;
+        return varTemp.data;
     }
 
 //  Adiciona item na pilha.
@@ -46,6 +65,7 @@ public class Stack {
         this.height++;
     }
 
+
     public void getTop() {
         System.out.println((this.top == null)
                 ? "Pilha vazia."
@@ -59,7 +79,6 @@ public class Stack {
                 : "Altura: "+this.height
         );
     }
-
     public void print() {
         Node varTemp = top;
 
