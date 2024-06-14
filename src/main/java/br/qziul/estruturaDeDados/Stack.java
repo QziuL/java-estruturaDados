@@ -65,6 +65,20 @@ public class Stack {
         this.height++;
     }
 
+    public void print() {
+        if(this.height == 0){
+            System.err.println("Pilha vazia.");
+        } else {
+            Node varTemp = top;
+
+            System.out.println("====================");
+            while(varTemp != null) {
+                System.out.println(varTemp.data);
+                varTemp = varTemp.next;
+            }
+            System.out.println("====================");
+        }
+    }
 
     public void getTop() {
         System.out.println((this.top == null)
@@ -78,15 +92,5 @@ public class Stack {
                 ? "Pilha vazia."
                 : "Altura: "+this.height
         );
-    }
-    public void print() {
-        Node varTemp = top;
-
-        System.out.println("====================");
-        while(varTemp != null) {
-            System.out.println(varTemp.data);
-            varTemp = varTemp.next;
-        }
-        System.out.println("====================");
     }
 }
