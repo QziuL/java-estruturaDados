@@ -4,6 +4,9 @@ import br.qziul.estruturaDeDados.Stack;
 public class Main {
     public static void main(String[] args) {
         Stack stack = new Stack("Elemento 1");
+
+        stack.push("Elemento 2");
+
         stack.getTop();
         stack.getHeight();
         stack.print();

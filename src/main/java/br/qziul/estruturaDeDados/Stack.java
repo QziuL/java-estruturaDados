@@ -34,6 +34,18 @@ public class Stack {
         this.height = 1;
     }
 
+//  Adiciona item na pilha.
+    public void push(String data) {
+        Node newNode = new Node(data);
+        if(this.height == 0) {
+            this.top = newNode;
+        } else {
+            newNode.next = this.top;
+            this.top = newNode;
+            this.height++;
+        }
+    }
+
     public void getTop() {
         System.out.println((this.top == null)
                 ? "Pilha vazia."
