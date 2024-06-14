@@ -42,8 +42,8 @@ public class Stack {
         } else {
             newNode.next = this.top;
             this.top = newNode;
-            this.height++;
         }
+        this.height++;
     }
 
     public void getTop() {
