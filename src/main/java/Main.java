@@ -11,7 +11,7 @@ public class Main {
         stack.getHeight();
         stack.print();
 
-        System.out.println("Elemento deletado: "+stack.pop());
+        System.out.println("Elemento deletado: "+stack.pop().getData());
 
 
         stack.print();

@@ -18,12 +18,16 @@ public class Stack {
 
 
 //  Classe que representa um Nó na pilha.
-    class Node {
+    public class Node {
         String data;
         Node next;
 
         public Node(String data) {
             this.data = data;
+        }
+
+        public String getData() {
+            return data;
         }
     }
 
@@ -35,7 +39,7 @@ public class Stack {
     }
 
 //  Remover item da pilha.
-    public String pop() {
+    public Node pop() {
         if(this.height == 0) {
             return null;
         }
@@ -50,7 +54,7 @@ public class Stack {
         }
 
         this.height--;
-        return varTemp.data;
+        return varTemp;
     }
 
 //  Adiciona item na pilha.
