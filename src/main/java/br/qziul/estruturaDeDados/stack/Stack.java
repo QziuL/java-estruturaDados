@@ -1,4 +1,4 @@
-package br.qziul.estruturaDeDados;
+package br.qziul.estruturaDeDados.stack;
 
 /*
     Operações da Pilha:
@@ -7,10 +7,6 @@ package br.qziul.estruturaDeDados;
     - Ler topo (getTop)
     - Imprimir (print)
  */
-
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.SQLOutput;
 
 public class Stack {
     private Node top;

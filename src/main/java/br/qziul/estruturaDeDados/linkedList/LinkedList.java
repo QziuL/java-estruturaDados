@@ -1,4 +1,4 @@
-package br.qziul.estruturaDeDados;
+package br.qziul.estruturaDeDados.linkedList;
 
 public class LinkedList {
 
