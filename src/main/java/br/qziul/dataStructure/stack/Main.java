@@ -1,4 +1,4 @@
-package br.qziul.estruturaDeDados.stack;
+package br.qziul.dataStructure.stack;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package br.qziul.estruturaDeDados.linkedList;
+package br.qziul.dataStructure.linkedList;
 
 public class Main {
     public static void main(String[] args) {
